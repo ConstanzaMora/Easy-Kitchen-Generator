@@ -3,66 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Easy Kitchen Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Easy Kitchen Generator</h1>
-      <h2>
-        Easy Kitchen is an AI generator that helps you create delicious recipes.
-        You only need to type your food ingredients, and Easy Kitchen will do
-        the rest.
-      </h2>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Type your ingridients"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
+    <div class="container">
+      <header>
+        <h1>
+          <div class="title">Easy Kitchen Generator</div>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/035/original/Screenshot_2024-02-28_213632.png?1709170628"
+            class="logo"
+          />
+        </h1>
+        <h2 class="statement">
+          Easy Kitchen is an AI Generator that helps you create delicious
+          recipes. You only need to type your ingredients, and Easy Kitchen will
+          do the rest.
+        </h2>
+      </header>
+      <main>
+        <form>
+          <input
+            class="information-bar"
+            type="text"
+            placeholder="My ingredients are..."
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <br />
+          <input class="food-button" type="Submit" />
+        </form>
         <br />
-        <div>
-          Asian Cucumber Salad
+        <div class="complete-recipe">
+          <div class="title-recipe">Asian Cucumber Salad</div>
           <br />
-          <ul>
-            Ingredients: thin-skinned cucumbers (English, Turkish, Persian),
-            salt, rice vinegar, sesame oil, soy sauce or liquid amino acids,
-            maple syrup (or honey), garlic, ginger, chili, paste
-          </ul>
-          <br />
-          <ul>
-            Process: So if you have time, salt the cucumbers, and place in a
-            strainer– for 20 minutes or up to a few hours! Chop up your herbs.
-            Here I’m simply using scallions, but feel free to play with chives,
-            cilantro, or even Thai basil! You can directly add these to the
-            salad bowl with the strained cucumbers and toss. Simple! Grate a
-            little ginger into the salad. Grate a little garlic into the bowl.
-            For a little heat- add Red chili paste or sriracha. The Asian
-            Cucumber Salad will last 3 days in the fridge- if it makes it that
-            long!
-          </ul>
+          <div class="step-by-step">
+            <div>
+              <div class="title-ingredients">Ingredients</div>
+              <div class="ingredients-recipe">
+                <ul>
+                  <li>Thin-skinned cucumbers (English, Turkish, Persian)</li>
+                  <li>salt</li>
+                  <li>rice</li>
+                  <li>vinegar</li>
+                  <li>sesame oil</li>
+                  <li>soy sauce or liquid amino acids</li>
+                  <li>maple syrup (or honey)</li>
+                  <li>garlic</li>
+                  <li>ginger</li>
+                  <li>chili paste</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="title-steps">Steps</div>
+              <div class="steps-recipe">
+                <ol>
+                  <li>
+                    So if you have time, salt the cucumbers, and place in a
+                    strainer– for 20 minutes or up to a few hours!
+                  </li>
+                  <li>
+                    Chop up your herbs. Here I’m simply using scallions, but
+                    feel free to play with chives, cilantro, or even Thai basil!
+                  </li>
+                  <li>
+                    You can directly add these to the salad bowl with the
+                    strained cucumbers and toss. Simple!
+                  </li>
+                  <li>Grate a little ginger into the salad.</li>
+                  <li>Grate a little garlic into the bowl</li>
+                  <li>For a little heat- add Red chili paste or sriracha</li>
+                  <li>
+                    The Asian Cucumber Salad will last 3 days in the fridge- if
+                    it makes it that long!
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/ConstanzaMora" target="_blank"
-        >Constanza Mora</a
-      >
-      and is open-source on
-      <a
-        href="https://github.com/ConstanzaMora/Easy-Kitchen-Generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and it is hosted by
-      <a href="https://easykitchengenerator.netlify.app/">Netlify</a>
-    </footer>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/ConstanzaMora" target="_blank"
+          >Constanza Mora</a
+        >
+        and is open-source on
+        <a
+          href="https://github.com/ConstanzaMora/Easy-Kitchen-Generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and it is hosted by
+        <a href="https://easykitchengenerator.netlify.app/">Netlify</a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
