@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Easy Kitchen Generator</title>
   </head>
@@ -34,62 +35,30 @@
           <input
             class="information-bar"
             type="text"
-            placeholder="My ingredients are..."
+            placeholder="Type your ingredients here..."
             autofocus
             required
             autocomplete="off"
+            id="user-information"
           />
           <br />
           <input class="food-button" type="Submit" />
         </form>
         <br />
         <div class="complete-recipe" id="whole-recipe">
-          <div class="title-recipe" id="title-recipe-generator">
-            Asian Cucumber Salad
-          </div>
+          <div class="title-recipe" id="title-recipe-generator"></div>
           <br />
           <div class="step-by-step">
             <div>
               <div class="title-ingredients">Ingredients</div>
               <div class="ingredients-recipe" id="ingredients-recipe-generator">
-                <ul>
-                  <li>Thin-skinned cucumbers (English, Turkish, Persian)</li>
-                  <li>salt</li>
-                  <li>rice</li>
-                  <li>vinegar</li>
-                  <li>sesame oil</li>
-                  <li>soy sauce or liquid amino acids</li>
-                  <li>maple syrup (or honey)</li>
-                  <li>garlic</li>
-                  <li>ginger</li>
-                  <li>chili paste</li>
-                </ul>
+                <ul></ul>
               </div>
             </div>
             <div>
               <div class="title-steps">Steps</div>
               <div class="steps-recipe" id="steps-recipe-generator">
-                <ol>
-                  <li>
-                    So if you have time, salt the cucumbers, and place in a
-                    strainer– for 20 minutes or up to a few hours!
-                  </li>
-                  <li>
-                    Chop up your herbs. Here I’m simply using scallions, but
-                    feel free to play with chives, cilantro, or even Thai basil!
-                  </li>
-                  <li>
-                    You can directly add these to the salad bowl with the
-                    strained cucumbers and toss. Simple!
-                  </li>
-                  <li>Grate a little ginger into the salad.</li>
-                  <li>Grate a little garlic into the bowl</li>
-                  <li>For a little heat- add Red chili paste or sriracha</li>
-                  <li>
-                    The Asian Cucumber Salad will last 3 days in the fridge- if
-                    it makes it that long!
-                  </li>
-                </ol>
+                <ol></ol>
               </div>
             </div>
           </div>
