@@ -93,11 +93,8 @@ form {
   margin-bottom: 15px;
 }
 
-.complete-recipe {
-  display: none;
-}
-
 .title-recipe {
+  display: none;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -111,7 +108,7 @@ form {
   box-shadow: 10px 5px 5px rgb(164, 163, 163);
 }
 .step-by-step {
-  display: grid;
+  display: none;
   text-align: left;
   font-family: "Poppins", sans-serif;
   font-weight: 700;

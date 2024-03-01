@@ -2,6 +2,9 @@ function showRecipe(response) {
   let answer = response.data.answer;
   console.log(answer);
 
+  let stepByStepElemet = document.querySelector("#step-by-step");
+  stepByStepElemet.style.display = "grid";
+
   let recipeData;
 
   try {
@@ -17,6 +20,9 @@ function showRecipe(response) {
 
     let stepsBox = document.querySelector("#steps-recipe-generator");
     stepsBox.innerHTML = "";
+
+    let stepByStepElemet = document.querySelector("#step-by-step");
+    stepByStepElemet.style.display = "none";
     return;
   }
 
@@ -57,8 +63,11 @@ function generateRecipe(event) {
   let context = `You are the best Chef in the world, you have the best recipes from any country. You need to give a simple recipe with the ingredients given by the user instructions. The recipe needs to have a title, the ingredients listed in bullets points and the steps enlisted by numbers. Respond in the language that user type the ingredients.  Generate in json following convention {"Title":"INSERT TITLE HERE", "Ingredients":[INSERT INGREDIENTS HERE], "Steps" : [INSERT STEPS HERE]}. Ensure that the generated response always starts with {`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let recipeWholeElement = document.querySelector("#whole-recipe");
-  recipeWholeElement.style.display = "block";
+  let recipetitleElement = document.querySelector("#title-recipe-generator");
+  recipetitleElement.style.display = "block";
+
+  let stepByStepElemet = document.querySelector("#step-by-step");
+  stepByStepElemet.style.display = "none";
 
   //let recipeTitleBox = document.querySelector("#title-recipe-generator");
   //recipeTitleBox.innerHTML = "Generarting your food in a Click...";
