@@ -1,11 +1,3 @@
-new Typewriter("#statement-complete", {
-  strings:
-    " Easy Kitchen is an AI Generator that helps you create delicious recipes in any language. You only need to type your ingredients, and Easy Kitchen will do the rest.",
-  autoStart: true,
-  delay: 30,
-  cursor: "",
-});
-
 function showRecipe(response) {
   let answer = response.data.answer;
   console.log(answer);
@@ -64,6 +56,19 @@ function generateRecipe(event) {
   let prompt = `User instructions: Generate a food recipe with the following ingredients ${userInformationInput.value}`;
   let context = `You are the best Chef in the world, you have the best recipes from any country. You need to give a simple recipe with the ingredients given by the user instructions. The recipe needs to have a title, the ingredients listed in bullets points and the steps enlisted by numbers. Respond in the language that user type the ingredients.  Generate in json following convention {"Title":"INSERT TITLE HERE", "Ingredients":[INSERT INGREDIENTS HERE], "Steps" : [INSERT STEPS HERE]}. Ensure that the generated response always starts with {`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeWholeElement = document.querySelector("#whole-recipe");
+  recipeWholeElement.style.display = "block";
+
+  //let recipeTitleBox = document.querySelector("#title-recipe-generator");
+  //recipeTitleBox.innerHTML = "Generarting your food in a Click...";
+
+  new Typewriter("#title-recipe-generator", {
+    strings: " Generarting your food in a Click...",
+    autoStart: true,
+    delay: 20,
+    cursor: "",
+  });
 
   // Generate in json following convention {"Title":"INSERT TITLE HERE", "Ingredients":"INSERT INGREDIENTS HERE", "Steps" : "INSERT STEPS HERE"}
 

@@ -61,7 +61,7 @@ form {
 .information-bar {
   padding: 15px;
   width: 95%;
-  margin: 10px;
+  margin-top: 10px;
   border-radius: 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -69,6 +69,14 @@ form {
   background-color: #f8f7f1;
   border-color: #ff9376;
   font-size: 16px;
+  text-align: center;
+}
+
+.example {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 12px;
 }
 
 .food-button {
@@ -81,7 +89,12 @@ form {
   font-style: normal;
   color: #f8f7f1;
   background: #ff9376;
+  margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.complete-recipe {
+  display: none;
 }
 
 .title-recipe {
